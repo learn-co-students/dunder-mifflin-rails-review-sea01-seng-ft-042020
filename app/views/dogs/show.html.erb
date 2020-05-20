@@ -1,0 +1,7 @@
+<strong>Name:</strong> <%= @dog.name %><br><br>
+<strong>Breed:</strong> <%= @dog.breed %><br><br>
+<strong>Age:</strong> <%= @dog.age %><br><br>
+<strong>Owners:</strong><ul><% @dog.employees.each do |employee| %>
+<li><%= employee.to_s %></li>
+<% end %>
+</ul>
